@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transformation Result</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>File Transformer</h1>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Transformation Result</h1>
+        {% if error_message %}
+            <p class="error-message">{{ error_message }}</p>
+        {% else %}
+            <a href="/{{ path }}" download>
+                <img src="{% static 'image/dwnld.png' %}" alt="Download">
+            </a>
+            <div class="plot-container">
+                <h2>Generated Plot 1</h2>
+                <img src="data:image/png;base64,{{ plot1 }}" alt="Plot 1">
+            </div>
+            <div class="plot-container">
+                <h2>Generated Plot 2</h2>
+                <img src="data:image/png;base64,{{ plot2 }}" alt="Plot 2">
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Files</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>File Transformer</h1>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Upload Files</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="file1">Select File 1:</label>
+            <input type="file" id="file1" name="file1"><br><br>
+            
+            <label for="file2">Select File 2:</label>
+            <input type="file" id="file2" name="file2"><br><br>
+
+            <button type="submit">Upload</button>
+        </form>
+        {% if error_message %}
+            <p class="error-message">{{ error_message }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

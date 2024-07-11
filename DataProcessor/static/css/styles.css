@@ -1,0 +1,135 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header {
+    background: #0066cc;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: #004080 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+form {
+    background: #f1f5f9;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input[type="file"] {
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button,
+input[type="submit"] {
+    display: inline-block;
+    height: 40px;
+    padding: 0 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+    text-transform: uppercase;
+    background-color: #0066cc;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #004080;
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.plot-container {
+    margin-top: 20px;
+}
+
+.container a img{
+    margin-left:360px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px; 
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
